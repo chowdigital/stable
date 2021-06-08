@@ -1513,7 +1513,7 @@ a.bg-light:hover,a.bg-light:focus,button.bg-light:hover,button.bg-light:focus{ba
 .card-img-64{width:64px;height:64px}
 .mml-1{margin-left:-0.25rem !important}
 .flex-1{-webkit-box-flex:1;-ms-flex:1;flex:1}
-body,p,.menu-item a{font-family:arboria,sans-serif;font-weight:400;font-style:italic}
+body,p,.menu-item a{font-family:arboria,sans-serif;font-weight:400;font-style:normal}
 body strong,p strong,.menu-item a strong{font-weight:500}
 h1,.h1,h2,.h2{font-family:kansasnew,serif;font-weight:700;font-style:normal}
 h3,.h3,h5,.h5,h6,.h6,.btn,button,input[type="button"],input[type="reset"],input[type="submit"]{font-family:futura-pt,sans-serif;font-weight:700;font-style:normal}
@@ -2674,6 +2674,8 @@ body.logged-in nav{margin-top:32px}
 body{background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-color:#f7f3eb}
 a{color:#fff}
 a:focus,a:hover{color:#1a2a72}
+.top-nav-collapse .navbar-brand img{height:50px;width:auto;-webkit-transition:.7s;transition:.7s}
+.navbar-brand img{height:60px;width:auto;-webkit-transition:.7s;transition:.7s}
 .top-nav-collapse{background:#f7f3eb !important}
 .navbar{background:#f7f3eb}
 .navbar-brand{font-family:futura-pt,sans-serif;font-weight:700;font-style:normal;letter-spacing:.1em}
@@ -2687,7 +2689,8 @@ footer .container{padding-top:100px}
 footer .md-form label{color:#fff}
 .no-line-break{margin-bottom:0}
 .post-header{margin-top:8rem}
-.sign-up{font-size:2em;color:#1a2a72}
+.sign-up{font-size:2em;color:#ff7acf}
+.black-background{background-color:#231f20}
 .text-box{padding-top:100px;padding-bottom:100px}
 .text-box h4,.text-box .h4{color:#fff;font-size:1em}
 .text-box h4:before,.text-box .h4:before{content:"";display:inline-block;border:1px solid #fff;width:1em;margin:.3em .5em .3em 0}

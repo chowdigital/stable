@@ -57,7 +57,29 @@ a:focus, a:hover {
 
 // 2. Navigation
 // ===========================================================================
+// change Navbar color on scroll 
 
+.top-nav-collapse {
+    .navbar-brand img{
+        height: 50px;
+        width: auto;
+        transition: 0.7s; /* Adds a transition effect when the padding is decreased */
+
+    
+    }
+   
+}
+
+  
+//navbar logo
+
+.navbar-brand img{
+    height: 60px;
+    width: auto;
+    transition: 0.7s; /* Adds a transition effect when the padding is decreased */
+
+
+}
 // change Navbar color on scroll 
 
 .top-nav-collapse {
@@ -136,7 +158,7 @@ footer {
 
 .sign-up{
     font-size: 2em;
-    color: $blue-base;
+    color: $pink-base;
 }
 @include media-breakpoint-up(sm) {
     .sign-up{
@@ -150,6 +172,10 @@ footer {
     .sign-up{
         font-size: 4em;
     }
+}
+
+.black-background{
+    background-color: $black-base;
 }
 // 4. Content Boxes
 // ===========================================================================

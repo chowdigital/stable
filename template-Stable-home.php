@@ -1,38 +1,39 @@
-<?php /* Template Name: Cav Home*/ get_header(); ?>
+<?php /* Template Name: Stable Home*/ get_header(); ?>
 
 
 <div class="page-img-header d-flex z-depth-3" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
 
 <div class="mask gradient-custom" style="width: 100%; height: 100%;">
+<img id="full-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/stable_logo.svg" alt="Stable Logo Logo">
 
   </div>
 </div>
 <main id="primary" class="site-main container  pt-6 pb-6">
-  <div class="z-depth-3">
-  <div class="menu-content-box">
-  <div class="row col-6 offset-2 col-lg-4 offset-lg-4">
-      <img id="full-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/AtHome.png" alt="Cavendish Logo">
-    </div>
-		<?php
-		while ( have_posts() ) :
-			the_post();
+ 
 
-			get_template_part( 'template-parts/content', 'page' );
-			
+<div class="row col-12pt-5 pb-4">
+  <h2 class="text-center display-1 pb-5">Cronut single-origin coffee</h2>
+  <h3 class="text-center col-lg-8 offset-lg-2 pb-4">Viral meggings plaid, live-edge vice synth Tumblr. Forage iPhone locavore vaporware venmo gastropub cray VHS raw denim swag vexillologist ugh tousled waistcoat literally. </h3>
+  <div class="row">
+    <div class="col-6 text-right"><a href="../lets-talk/"><button type="button" class="btn btn-primary">Let's Talk</button></a></div>
+    <div class="col-6 text-left"><a href="../lets-talk/"><button type="button" class="btn btn-primary">Let's Talk</button></a></div>
+  </div>
+  
 
-			
+</div>
+  
 
-		endwhile; // End of the loop.
-		?>
-       <div class="more-box text-center pt-5 pb-5">
-    <a href="https://bbot.menu/thecavendishdeliveryorpickup/"><button type="button" class="btn btn-primary">Order The Cavendish @ Home</button></a>
-    </div>
+
+
+
+
+     
  
   <!--Grid row-->
   <div class="row wow fadeIn">
     <?php
     // The Query
-    $the_query = new WP_Query( 'cat=6&posts_per_page=3' );
+    $the_query = new WP_Query( 'cat=1&posts_per_page=3' );
     //posts_per_page=5'
 
 
@@ -81,8 +82,8 @@
       ?>
      </div>
     <!--Grid row-->
-</div>
-	</div>
+      <!-- END -- BLog Posts  -->
+
 
 
 
