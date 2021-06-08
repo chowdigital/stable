@@ -40,17 +40,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: $purple-base;
+    background-color: $amber-base;
     //background: url('http://localhost:8888/BlackBook/wp-content/uploads/2020/08/copper.png') no-repeat 50% fixed / cover;
 }
 a {
-    color:$white-base;
-    text-decoration: underline;
-    font-weight: 500;
+    color: $white-base;
+    
+
 
 }
 a:focus, a:hover {
-    color:$grey-base;
+    color:$blue-base;
 
 }
 
@@ -61,15 +61,15 @@ a:focus, a:hover {
 // change Navbar color on scroll 
 
 .top-nav-collapse {
-    background: $purple-base!important;
+    background: $amber-base!important;
 }
 
 .navbar {
-background: $purple-base;
+background: $amber-base;
 }
     @include media-breakpoint-up(md) {
         .navbar {
-            background: $purple-base;
+            background: $amber-base;
             }
       }
 
@@ -115,7 +115,7 @@ background: $purple-base;
 
 
 footer {
-    background-color: #242424;
+    background-color: $teal-base;
     margin-top: 4rem;
     .container {
         padding-top:100px
