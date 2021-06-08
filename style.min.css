@@ -1513,11 +1513,11 @@ a.bg-light:hover,a.bg-light:focus,button.bg-light:hover,button.bg-light:focus{ba
 .card-img-64{width:64px;height:64px}
 .mml-1{margin-left:-0.25rem !important}
 .flex-1{-webkit-box-flex:1;-ms-flex:1;flex:1}
-body,p,.menu-item a{font-family:futura-pt,sans-serif;font-weight:300;font-style:normal}
+body,p,.menu-item a{font-family:arboria,sans-serif;font-weight:400;font-style:italic}
 body strong,p strong,.menu-item a strong{font-weight:500}
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,.btn,button,input[type="button"],input[type="reset"],input[type="submit"]{font-family:futura-pt,sans-serif;font-weight:700;font-style:normal;letter-spacing:.1em}
-h3,.h3{font-family:playfair-display,serif;font-weight:400;font-style:normal}
-h4,.h4,.btn,button,input[type="button"],input[type="reset"],input[type="submit"],labelgit{font-family:playfair-display,serif;font-weight:400;font-style:italic}
+h1,.h1,h2,.h2{font-family:kansasnew,serif;font-weight:700;font-style:normal}
+h3,.h3,h5,.h5,h6,.h6,.btn,button,input[type="button"],input[type="reset"],input[type="submit"]{font-family:futura-pt,sans-serif;font-weight:700;font-style:normal}
+h4,.h4{font-family:futura-pt,sans-serif;font-weight:300;font-style:normal}
 .blockquote{padding:.5rem 1rem;border-left:.25rem solid #eceeef}
 .blockquote.text-right{border-right:.25rem solid #eceeef;border-left:0}
 .blockquote .bq-title{margin-bottom:0;font-size:1.5rem;font-weight:400}
@@ -2673,7 +2673,7 @@ html,body,#page,.view{width:100%;height:100%}
 body.logged-in nav{margin-top:32px}
 body{background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-color:#f7f3eb}
 a{color:#fff}
-a:focus,a:hover{color:#7b838d}
+a:focus,a:hover{color:#1a2a72}
 .top-nav-collapse{background:#f7f3eb !important}
 .navbar{background:#f7f3eb}
 .navbar-brand{font-family:futura-pt,sans-serif;font-weight:700;font-style:normal;letter-spacing:.1em}

@@ -34,7 +34,7 @@
         <!-- Content -->
         
         <!--Section heading-->
-    <h3 class="sign-up">Sign up for news, exclusive events & special offers</h3>
+    <h2 class="sign-up">Sign up for news, exclusive events & special offers</h2>
     <!--Section description-->
 
     <div class="row">
