@@ -49,66 +49,71 @@
       </div>
      </section>
 <!-- ** START ** what's On Section -->
-<section class="mb-5 mt-5">
+<div class="whats-on-boxes">
+  <section class="mb-5 mt-5">
 
 
-            <?php
-        $is_on = get_field('on_off');
-        if( $is_on ): ?>
-            <div class="row">
-              <div class="col-md-6">
-                    <h3><?php the_field('Box1_Title'); ?></h3>
-                    <p><?php the_field('box_1_copy'); ?></p>
-                    <a href="<?php the_field('box_1_link'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light">Find out more</button></a>
-                    </div>
-              
-              <div class="col-md-6" style="background-image: url('<?php the_field('box1-image'); ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+              <?php
+          $is_on = get_field('on_off');
+          if( $is_on ): ?>
+              <div class="row home-box-row">
+              <div class="col-lg-7 home-box-image z-depth-1" style="background-image: url('<?php the_field('box1-image'); ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  
+                  </div>
+                <div class="col-lg-4 box-1 p-5 d-flex flex-column justify-content-center">
+                      <h3><?php the_field('Box1_Title'); ?></h3>
+                      <p><?php the_field('box_1_copy'); ?></p>
+                      <a href="<?php the_field('box_1_link'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light">Find out more</button></a>
+                      </div>
                 
-              </div>
-            </div>
-          <?php endif; ?>
-        
-</section>
-<section class="mb-5 mt-5">
-
-
-            <?php
-        $is_on = get_field('on_off');
-        if( $is_on ): ?>
-            <div class="row">
-              <div class="col-md-6">
-                    <h3><?php the_field('Box1_Title'); ?></h3>
-                    <p><?php the_field('box_1_copy'); ?></p>
-                    <a href="<?php the_field('box_1_link'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light">Find out more</button></a>
-                    </div>
               
-              <div class="col-md-6" style="background-image: url('<?php the_field('box1-image'); ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-                
               </div>
-            </div>
-          <?php endif; ?>
-        
-</section>
-<section class="mb-5 mt-5">
+            <?php endif; ?>
+          
+  </section>
+  <section class="mb-5 mt-5">
 
 
-            <?php
-        $is_on = get_field('on_off');
-        if( $is_on ): ?>
-            <div class="row">
-              <div class="col-md-6">
-                    <h3><?php the_field('Box1_Title'); ?></h3>
-                    <p><?php the_field('box_1_copy'); ?></p>
-                    <a href="<?php the_field('box_1_link'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light">Find out more</button></a>
-                    </div>
-              
-              <div class="col-md-6" style="background-image: url('<?php the_field('box1-image'); ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+              <?php
+          $is_on = get_field('on_off');
+          if( $is_on ): ?>
+              <div class="row home-box-row">
+              <div class="col-lg-7 home-box-image z-depth-1" style="background-image: url('<?php the_field('box1-image'); ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  
+                  </div>
+                <div class="col-lg-4 box-2 p-5 d-flex flex-column justify-content-center">
+                      <h3><?php the_field('Box1_Title'); ?></h3>
+                      <p><?php the_field('box_1_copy'); ?></p>
+                      <a href="<?php the_field('box_1_link'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light">Find out more</button></a>
+                      </div>
                 
+               
               </div>
-            </div>
-          <?php endif; ?>
-        
-</section>
+            <?php endif; ?>
+          
+  </section>
+  <section class="mb-5 mt-5">
+
+
+              <?php
+          $is_on = get_field('on_off');
+          if( $is_on ): ?>
+              <div class="row home-box-row">
+              <div class="col-lg-7 home-box-image z-depth-1" style="background-image: url('<?php the_field('box1-image'); ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  
+                  </div>
+                <div class="col-lg-4  box-3 p-5 d-flex flex-column justify-content-center">
+                      <h3><?php the_field('Box1_Title'); ?></h3>
+                      <p><?php the_field('box_1_copy'); ?></p>
+                      <a href="<?php the_field('box_1_link'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light">Find out more</button></a>
+                      </div>
+                
+               
+              </div>
+            <?php endif; ?>
+          
+  </section>
+</div>
 <!-- ** END ** what's On Section -->
 
 	</main><!-- #main -->
