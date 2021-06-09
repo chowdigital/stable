@@ -2719,6 +2719,7 @@ footer .md-form label{color:#fff}
 .thumb-wrapper img{-o-object-fit:cover;object-fit:cover}
 .entry-footer{display:none}
 body,p{font-size:1.2em !important}
+.full-page-intro{margin-top:7em;overflow:visible}
 @media(prefers-reduced-motion:reduce){.form-control,input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"],textarea,select{-webkit-transition:none;transition:none}
 .form-check-input{-webkit-transition:none;transition:none}
 .form-range::-webkit-slider-thumb{-webkit-transition:none;transition:none}

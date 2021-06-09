@@ -3,18 +3,18 @@
 <div class="view full-page-intro">
 
 
-  <div class="view full-page-intro" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
-  
+  <div class="view full-page-intro" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/pizza_sunshin2.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+
   </div>
   <!-- Mask & flexbox options-->
 
-  <div class="mask d-flex justify-content-center align-items-center">
+  <div class="mask d-flex pt-5">
 
     <!-- Content -->
     <div class="container">
 
       <!--Grid row-->
-      <div class="col-8 offset-2 col-lg-6 offset-lg-3">
+      <div class="col-10 offset-1 col-lg-8 offset-lg-2">
   
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/stable_logo.svg" alt="Stable Logo Logo">
         <h1 class="header-text text-center">Southampton</h1>
