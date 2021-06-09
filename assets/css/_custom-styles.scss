@@ -9,6 +9,7 @@
 //  3. Footer
 //  4. Content Boxes
 //  5. Buttons
+//  6. Colouder Boxes Nth Child
 
 
 
@@ -44,13 +45,13 @@ body {
     //background: url('http://localhost:8888/BlackBook/wp-content/uploads/2020/08/copper.png') no-repeat 50% fixed / cover;
 }
 a {
-    color: $white-base;
+    color: $blue-base;
     
 
 
 }
 a:focus, a:hover {
-    color:$blue-base;
+    color: $pink-base;
 
 }
 
@@ -177,6 +178,10 @@ footer {
 .black-background{
     background-color: $black-base;
 }
+
+.light-text p {
+    color: $white-base;
+}
 // 4. Content Boxes
 // ===========================================================================
 
@@ -258,10 +263,10 @@ footer {
 .menu-content-box {
     background-color: $blue-base;
     padding: 4rem;
-    color: #fff;
+    color: $blue-base;
     .entry-header h1, .entry-header h2{
         display: inline-block;
-        border-bottom: 1px solid white;
+        border-bottom: 2px solid $blue-base;
         margin-bottom: 0.5em;
         padding-bottom: 0.5em;
     }
@@ -270,10 +275,10 @@ footer {
 .blog-content-box {
     background-color: $purple-base;
     padding: 4rem;
-    color: #fff;
+    color: $blue-base;
     .entry-header{
         display: inline-block;
-        border-bottom: 1px solid $white-base;
+        border-bottom: 2px solid $blue-base;
         margin-bottom: 2em;
     }
 }
@@ -284,21 +289,22 @@ footer {
 
 // Hightlight Book BTN
 .book-btn {
-    border: 1px solid $white-base;
+  
     padding: 0em 2em;
 }
 .book-btn:hover {
-    border: 1px solid $blue-base;
+  
 }
 .btn-primary{
     background-color: $blue-base;
+    border:none;
     font-size:1em;
     margin: 0;
     padding: 0.5em 2em;
 }
 .btn-primary:hover, button:hover{
-    color: $blue-base;
-    border-color: $blue-base;
+    color: $pink-base;
+  
 }
 
 //Resize Navbar buttons
@@ -315,13 +321,48 @@ background: linear-gradient(180deg, rgba(0,0,0,0.7077031496192228) 0%, rgba(0,0,
 
 .page-img-header{
     height: 100%;
-    height: 80vh;
+    min-height: 100vh;
 }
 .overlap-cover{
     margin-top: -50vh;
 }
 
 
+// 6. Coloured Boxes nth child
+// ===========================================================================
+
+
+// alternate menus side to side 
+.alt-col-grid a:nth-of-type(1) .container .row .menu-content-box
+
+{
+    background-color: $yellow-base;
+}
+
+.alt-col-grid a:nth-of-type(2) .container .row .menu-content-box
+{
+    background-color: $light-blue-base;
+    
+}
+
+.alt-col-grid a:nth-of-type(3) .container .row .menu-content-box
+{
+    background-color: $pink-base;
+}
+
+@include media-breakpoint-up(lg) {
+            .alt-col-grid a:nth-of-type(1) .container .row
+
+        {
+            flex-direction: row-reverse;
+        }
+
+            .alt-col-grid a:nth-of-type(3) .container .row
+        {
+            flex-direction: row-reverse;
+        }
+
+  }
 
 //fonts
 

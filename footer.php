@@ -52,38 +52,20 @@
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
-      <div class="col-12 col-lg-3 offset-lg-1">
+      <section class="col-12 col-lg-3 offset-lg-1">
 
        <!-- Links -->
     <!--Section description-->
    <div class="row">
-   <div class="col-12 col-sm-6 col-lg-12">
+   <div class="pb-5"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/stable_logo_light.svg" class="img-fluid" alt="Stable Logo Light" ></div>
 
-   
-        <h2 class="h3-responsive font-weight-bold my-4">OPENING TIMES</h2>
+   <div class="col-12 col-sm-6  col-lg-12">
 
-
-              <p class="no-line-break">Monday 11:30am - 11pm </p>
-              <p>Tuesday 11:30am - 11pm </p>
-              <p>Wednesday 11:30am - 11pm </p>
-              <p>Thursday 11:30am - 11pm </p>
-              <p>Friday 11:30am - 11pm </p> 
-              <p>Saturday 11:30am - 11pm </p>
-              <p>Sunday 11:30am - 11pm </p>         
-   
-
-       
-      </div>
-<div class="col-12 col-sm-6  col-lg-12">
-
-<div class="mr-5 mb-3 pr-5"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/stable_logo_light.svg" class="img-fluid" alt="Stable Logo Light" ></div>
 
 
    
         <ul class="list-unstyled">
-          <li>
-          <p><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;138 Above Bar St,<br> Southampton, <br>SO14 7DU</p>
-          </li>
+         
           <li>
           </li>
           <li>
@@ -96,6 +78,9 @@
           <li>
           <a href="https://what3words.com/booth.simply.best"><p>///&nbsp;&nbsp;booth.simply.best
 </a></p>
+          </li>
+          <li>
+          <p class="text-white"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;138 Above Bar St, Southampton, SO14 7DU</p>
           </li>
           <li>
           <a href="careers"><i class="fa fa-rocket mt-4" aria-hidden="true"></i>&nbsp;&nbsp;Careers</a> 
@@ -112,9 +97,30 @@
         </ul>
         </div>
        
+   <div class="col-12 col-sm-6 col-lg-12 light-text">
+
+   
+        <h2 class="h3-responsive font-weight-bold my-4">OPENING TIMES</h2>
+
+
+              <p>Monday 11:30am - 11pm </p>
+              <p>Tuesday 11:30am - 11pm </p>
+              <p>Wednesday 11:30am - 11pm </p>
+              <p>Thursday 11:30am - 11pm </p>
+              <p>Friday 11:30am - 11pm </p> 
+              <p>Saturday 11:30am - 11pm </p>
+              <p>Sunday 11:30am - 11pm </p>         
+   
+
+       
+      </div>
+
     
       </div>
-</div>
+</section>
+
+
+
     </div>
 
 
@@ -122,6 +128,8 @@
   <!-- Footer Links -->
 
  
+
+
      <!-- Cloudsdale -->
      <div class="mt-5 text-center py-3 black-background"> 
     <a href="https://cloudsdale.co.uk/">   <img src="https://cloudsdale.co.uk/wp-content/themes/Cloudsdale_2.0/assets/img/cloudsdale_logo.svg" alt="Cloudsdale" style="height:20px">
