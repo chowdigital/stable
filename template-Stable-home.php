@@ -48,91 +48,68 @@
 </div>
       </div>
      </section>
+<!-- ** START ** what's On Section -->
+<section class="mb-5 mt-5">
 
 
-
-     <div class="entry-content container col-12">
-		<?php
-		the_content();
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wordpress-bootstrap-starter-theme' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-
-<!--Grid row-->
-<section class="alt-col-grid mt-5 mb-5">
-<?php
-// The Query
-$the_query = new WP_Query( 'cat=1&posts_per_page=24' );
-//posts_per_page=5'
-
-
-// The Loop
-		if ( $the_query->have_posts() ) {
-			while ( $the_query->have_posts() ) {
-				$the_query->the_post();
-				$category = get_the_category(); 
-				?>		
-
-
-    <!--Grid column-->
-  
-        <!--Featured image-->
-   
-       
-        <a href="<?php echo get_permalink() ?>" class="">
-  <div class="container">
-    <div class="row mt-5 mb-5">
-        <div class="menu-image-box square col-12 col-lg-6" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
-    
-      </div>
-       
-      <div class="menu-content-box grit square col-12 col-lg-6 d-flex align-items-center">
-	<header class="entry-header" style="width:100%;">
-
-  <h2 class="m-5">
- <?php the_title(); ?>
-        </h2>
-        <div class="m-5"><?php the_excerpt(); ?></div>
-
+            <?php
+        $is_on = get_field('on_off');
+        if( $is_on ): ?>
+            <div class="row">
+              <div class="col-md-6">
+                    <h3><?php the_field('Box1_Title'); ?></h3>
+                    <p><?php the_field('box_1_copy'); ?></p>
+                    <a href="<?php the_field('box_1_link'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light">Find out more</button></a>
+                    </div>
+              
+              <div class="col-md-6" style="background-image: url('<?php the_field('box1-image'); ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                
+              </div>
+            </div>
+          <?php endif; ?>
         
-	</header><!-- .entry-header -->
+</section>
+<section class="mb-5 mt-5">
 
 
+            <?php
+        $is_on = get_field('on_off');
+        if( $is_on ): ?>
+            <div class="row">
+              <div class="col-md-6">
+                    <h3><?php the_field('Box1_Title'); ?></h3>
+                    <p><?php the_field('box_1_copy'); ?></p>
+                    <a href="<?php the_field('box_1_link'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light">Find out more</button></a>
+                    </div>
+              
+              <div class="col-md-6" style="background-image: url('<?php the_field('box1-image'); ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                
+              </div>
+            </div>
+          <?php endif; ?>
+        
+</section>
+<section class="mb-5 mt-5">
 
 
-      
-
-
-
-
-      </div>
-     
-      </div>
-  <!--Grid row-->
-  </div>
-    <!--Grid column-->
-
-  <?php
-  
-  $counter++;
-  } // end while
-  } // end if
-  ?>
-
-</a>
-</section><!-- #main -->
-
-
-
-
-  
+            <?php
+        $is_on = get_field('on_off');
+        if( $is_on ): ?>
+            <div class="row">
+              <div class="col-md-6">
+                    <h3><?php the_field('Box1_Title'); ?></h3>
+                    <p><?php the_field('box_1_copy'); ?></p>
+                    <a href="<?php the_field('box_1_link'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light">Find out more</button></a>
+                    </div>
+              
+              <div class="col-md-6" style="background-image: url('<?php the_field('box1-image'); ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                
+              </div>
+            </div>
+          <?php endif; ?>
+        
+</section>
+<!-- ** END ** what's On Section -->
 
 	</main><!-- #main -->
 

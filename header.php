@@ -27,7 +27,7 @@
 
 		
               
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" role="navigation">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar" role="navigation">
   <div class="container">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">

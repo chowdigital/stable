@@ -2689,7 +2689,7 @@ footer .container{padding-top:100px}
 footer .md-form label{color:#fff}
 .no-line-break{margin-bottom:0}
 .post-header{margin-top:8rem}
-.sign-up{font-size:2em;color:#ff7acf}
+.sign-up{font-size:3em;color:#ff7acf}
 .black-background{background-color:#231f20}
 .light-text p{color:#fff}
 .text-box{padding-top:100px;padding-bottom:100px}
@@ -2709,7 +2709,7 @@ footer .md-form label{color:#fff}
 .gradient-custom{background:black;background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.707703)),color-stop(38%,rgba(0,0,0,0)));background:linear-gradient(180deg,rgba(0,0,0,0.707703) 0,rgba(0,0,0,0) 38%)}
 .page-img-header{height:100%;min-height:100vh}
 .overlap-cover{margin-top:-50vh}
-.alt-col-grid a:nth-of-type(1) .container .row .menu-content-box{background-color:#dada00}
+.box-1{background-color:#dada00}
 .alt-col-grid a:nth-of-type(2) .container .row .menu-content-box{background-color:#c4eae3}
 .alt-col-grid a:nth-of-type(3) .container .row .menu-content-box{background-color:#ff7acf}
 .pt-6{margin-top:7rem}
@@ -2966,7 +2966,7 @@ body,p{font-size:1.2em !important}
 .h3-responsive{font-size:125%}
 .h4-responsive{font-size:125%}
 .h5-responsive{font-size:125%}
-.sign-up{font-size:3em}
+.sign-up{font-size:4em}
 .text-box h4,.text-box .h4{font-size:1.5em}
 .text-box h4:before,.text-box .h4:before{width:2em;margin:.3em .5em .3em 0}
 .text-box h3,.text-box .h3{font-size:3em;margin:0 .3em}
@@ -3431,7 +3431,7 @@ body,p{font-size:1.2em !important}
 .modal .modal-side{position:absolute;right:10px;bottom:10px;width:400px;margin:0}
 .nav-item{margin:0 2em}
 footer .container{padding-top:150px}
-.sign-up{font-size:4em}
+.sign-up{font-size:5em}
 .text-box{padding-top:150px;padding-bottom:150px}
 .text-box h4,.text-box .h4{font-size:1.5em}
 .text-box h4:before,.text-box .h4:before{width:2em;margin:.3em .5em .3em 0}
