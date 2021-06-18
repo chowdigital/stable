@@ -10,6 +10,7 @@
 //  4. Content Boxes
 //  5. Buttons
 //  6. Colouder Boxes  homepage
+//  7. DMN form
 
 
 
@@ -54,7 +55,9 @@ a:focus, a:hover {
     color: $pink-base;
 
 }
-
+.display-1{
+    color: $pink-base;
+}
 
 // 2. Navigation
 // ===========================================================================
@@ -284,10 +287,18 @@ footer {
     }
 }
 
+.menu-links {
+    margin-top: 6em;
+    h4 {  
+        font-size: 3em;
+    }
+}
 // 5. Buttons
 // ===========================================================================
 
-
+.btn {
+    font-weight: 700;
+}
 // Hightlight Book BTN
 .book-btn {
   
@@ -375,6 +386,9 @@ background: linear-gradient(180deg, rgba(0,0,0,0.7077031496192228) 0%, rgba(0,0,
     }
     
 }
+
+// 6. DMN FORM
+// ===========================================================================
 
 
 //fonts

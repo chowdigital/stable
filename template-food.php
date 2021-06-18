@@ -15,7 +15,7 @@
 
 <?php
 // The Query
-$the_query = new WP_Query( 'cat=4&posts_per_page=24' );
+$the_query = new WP_Query( 'cat=5&posts_per_page=1' );
 //posts_per_page=5'
 
 
@@ -32,35 +32,8 @@ $the_query = new WP_Query( 'cat=4&posts_per_page=24' );
         <!--Featured image-->
    
         <section class="container-fluid">
-        <a href="<?php echo get_permalink() ?>" class="">
-  <div class="container pt-6 pb-6">
-    <div class="row z-depth-3">
-        <div class="menu-image-box col-12 col-lg-6 z-depth-3" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
-    
-      </div>
-       
-      <div class="menu-content-box col-12 col-lg-6 d-flex align-items-center">
-	<header class="entry-header" style="width:100%;">
+        <?php the_content(); ?>
 
-  <h2 class="mb-3 text-center">
-          <?php the_title(); ?>
-        </h2>
-        
-	</header><!-- .entry-header -->
-
-
-
-
-      
-
-
-
-
-      </div>
-     
-      </div>
-  <!--Grid row-->
-  </div>
     <!--Grid column-->
 
   <?php

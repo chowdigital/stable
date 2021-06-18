@@ -1,97 +1,116 @@
 <?php /* Template Name: Menu*/ get_header(); ?>
 
-<div class="page-img-header d-flex z-depth-3" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
 
-<div class="mask gradient-custom" style="width: 100%; height: 100%;">
 
+
+<main class="container pt-6 pb-6">
+  <h2 class="display-1 col-12 col-lg-6">What's on</h2>
+  <h2 class="display-1 col-12 col-lg-6 offset-lg-1">the menu?</h2>
+
+  <div class="row pt-6 pb-6 gx-5">
+  <div class="col-lg-3">
+    <h2 class="pt-6 pb-3">Sharers</h2>
+    <h4> Garlic Bread 4.5 (vg)</h4>
+    <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
+    <h4> Garlic Bread 4.5 (vg)</h4>
+    <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
+    <h2 class="pt-6 pb-3">Salads</h2>
+    <h4> Garlic Bread 4.5 (vg)</h4>
+    <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
+    <h4> Garlic Bread 4.5 (vg)</h4>
+    <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
   </div>
-</div>
+  <div class="col-lg-8 offset-lg-1">
+    <h2 class="pt-6 pb-3">Sourdough Pizzas</h2>
+    <div class="row">
+      <div class="col-lg-5">
+        <h4> Garlic Bread 4.5 (vg)</h4>
+        <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
+        <h4> Garlic Bread 4.5 (vg)</h4>
+        <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
+        <h4> Garlic Bread 4.5 (vg)</h4>
+        <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
+        <h4> Garlic Bread 4.5 (vg)</h4>
+        <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
+      </div> 
+      <div class="col-lg-5 offset-lg-1">
+        <h4> Garlic Bread 4.5 (vg)</h4>
+        <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
+        <h4> Garlic Bread 4.5 (vg)</h4>
+        <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
+        <h4> Garlic Bread 4.5 (vg)</h4>
+        <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
+        <h4> Garlic Bread 4.5 (vg)</h4>
+        <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
+        <h4> Garlic Bread 4.5 (vg)</h4>
+        <p><i>freshly baked sourdough, garlic butter, fresh parsley</i></p>
+      </div> 
+    </div>
+  </div>
+
+  </row>
+  <?php
+// The Query
+$the_query = new WP_Query( 'cat=5&posts_per_page=1' );
+//posts_per_page=5'
 
 
-<main class="container-fluid">
-  <div class="container pt-6 pb-6">
-    <div class="row z-depth-3">
-      
-    <div class="menu-image-box col-12 col-lg-6" style="background-image: url(<?php the_field('menu_image');  ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
-      
-      </div>
-      
+// The Loop
+		if ( $the_query->have_posts() ) {
+			while ( $the_query->have_posts() ) {
+				$the_query->the_post();
+				$category = get_the_category(); 
+				?>		
 
 
-      <div class="menu-content-box col-12 col-lg-6 text-center">
-	<header class="entry-header">
-		<?php the_title( '<h1>', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-the_content();
-endwhile; else: ?>
-<p>Sorry, no posts matched your criteria.</p>
-<?php endif; ?>
+    <!--Grid column-->
+  
+        <!--Featured image-->
+   
+        <section class="container-fluid">
+        <?php the_content(); ?>
+
+    <!--Grid column-->
+
+  <?php
+  
+  $counter++;
+  } // end while
+  } // end if
+  ?>
 
 
-
-      
-        
-<div class="row">
-        <div class="col-12">
-          <?php if( get_field('f_1') ): ?>
-            <a href="<?php the_field('f_1'); ?>"><button type="button" class="btn btn-light btn-80">
-              <div class="div"><h4><?php the_field('n_1'); ?></h4></div>
-              <div class="div"><?php the_field('s_1'); ?></div>
-            </button></a>
-           
-         
-          <?php endif; ?>
-        </div>
-        <div class="col-12">
-          <?php if( get_field('f_2') ): ?>
-
-            <a href="<?php the_field('f_2'); ?>"><button type="button" class="btn btn-light btn-80">
-              <div class="div"><h4><?php the_field('n_2'); ?></h4></div>
-              <div class="div"><?php the_field('s_2'); ?></div>
-            </button></a>
-                        <?php endif; ?>
-        </div>
-      </div>
-          
-      <div class="row">
-        <div class="col-12">
-          <?php if( get_field('f_3') ): ?>
-            <a href="<?php the_field('f_3'); ?>"><button type="button" class="btn btn-light btn-80">
-              <div class="div"><h4><?php the_field('n_3'); ?></h4></div>
-              <div class="div"><?php the_field('s_3'); ?></div>
-            </button></a>        <?php endif; ?>
-        </div>
-        <div class="col-12">
-        <?php if( get_field('f_4') ): ?>
-          <a href="<?php the_field('f_4'); ?>"><button type="button" class="btn btn-light btn-80">
-              <div class="div"><h4><?php the_field('n_4'); ?></h4></div>
-              <div class="div"><?php the_field('s_4'); ?></div>
-            </button></a>      <?php endif; ?>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-        <?php if( get_field('f_5') ): ?>
-          <a href="<?php the_field('f_1'); ?>"><button type="button" class="btn btn-light btn-80">
-              <div class="div"><h4><?php the_field('n_5'); ?></h4></div>
-              <div class="div"><?php the_field('s_5'); ?></div>
-            </button></a>      <?php endif; ?>
-        </div>
-        <div class="col-12">
-        <?php if( get_field('f_6') ): ?>
-          <a href="<?php the_field('f_1'); ?>"><button type="button" class="btn btn-light btn-80">
-              <div class="div"><h4><?php the_field('n_6'); ?></h4></div>
-              <div class="div"><?php the_field('s_6'); ?></div>
-            </button></a>      <?php endif; ?>
-        </div>
-      </div>
+<?php
+// The Query
+$the_query = new WP_Query( 'cat=6&posts_per_page=1' );
+//posts_per_page=5'
 
 
-      </div>
-</div>
-</div>
+// The Loop
+		if ( $the_query->have_posts() ) {
+			while ( $the_query->have_posts() ) {
+				$the_query->the_post();
+				$category = get_the_category(); 
+				?>		
+
+
+    <!--Grid column-->
+  
+        <!--Featured image-->
+   
+        <section class="container-fluid">
+        <?php the_content(); ?>
+
+    <!--Grid column-->
+
+  <?php
+  
+  $counter++;
+  } // end while
+  } // end if
+  ?>
+
+</section><!-- #main -->
 </main><!-- #main -->
 <?php get_template_part( 'template-parts/banner', 'page' ); ?>
 <?php get_footer(); ?>
