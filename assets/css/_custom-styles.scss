@@ -11,6 +11,7 @@
 //  5. Buttons
 //  6. Colouder Boxes  homepage
 //  7. DMN form
+//  8. Menu Page
 
 
 
@@ -55,7 +56,7 @@ a:focus, a:hover {
     color: $pink-base;
 
 }
-.display-1{
+.display-1, .display-2, .display-3, .display-4, .display-5{
     color: $pink-base;
 }
 
@@ -387,7 +388,7 @@ background: linear-gradient(180deg, rgba(0,0,0,0.7077031496192228) 0%, rgba(0,0,
     
 }
 
-// 6. DMN FORM
+// 7. DMN FORM
 // ===========================================================================
 
 
@@ -402,10 +403,47 @@ background: linear-gradient(180deg, rgba(0,0,0,0.7077031496192228) 0%, rgba(0,0,
 }
 
 
-// Menu page 
+// 6. Menu Page
+// ===========================================================================
+@include media-breakpoint-up(lg) {
+    .menuNavParent{
+        min-height: 100vh;
+    }
+    .menuNav {
+        top: 0;
+        position:sticky;
+    }
+    .stickyPadding{
+        padding-top:2.5em;
+    }
+ 
+}
 
-// \Menu Page 
+.menuSection{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    //clear: left;
+}
+.menuBlock {
+    width: 100%;
 
+}
+@include media-breakpoint-up(md) {
+    .menuBlock {
+        width: 50%;
+        padding-right:2.5em;
+
+    }
+}
+
+hr.blueSolid {
+    border-top: 2px solid $blue-base;   
+    width: 100%;
+    opacity: 1;
+  }
+// XX. Misc
+// ===========================================================================
 
 
 // fix spacing issue text on footer
